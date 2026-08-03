@@ -12,7 +12,12 @@ ZSH_THEME_RANDOM_CANDIDATES=(
   "agnoster"
 )
 
-plugins=(git)
+plugins=(
+  asdf
+  fzf
+  git
+  macos
+)
 
 # Personal
 
