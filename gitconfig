@@ -1,11 +1,11 @@
 [user]
-	email = TBD
 	name = TBD
-	signingkey = TBD
+	email = TBD
+	signingkey = ~/.ssh/TBD.pub
 [core]
 	editor = vim
 	pager = delta
-	excludesfile = TBD
+	excludesfile = ~/.gitignore_global
 [help]
 	autocorrect = 1
 [gpg]
@@ -23,3 +23,11 @@
 	navigate = true
 	side-by-side = true
 	line-numbers = true
+
+# To Be Reviewed
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
