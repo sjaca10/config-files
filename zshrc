@@ -12,6 +12,7 @@ ZSH_THEME_RANDOM_CANDIDATES=(
   "agnoster"
 )
 
+# Requires fzf `$ brew install fzf`
 plugins=(
   asdf
   fzf
